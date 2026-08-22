@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Furqan Ansari — Portfolio
 
 A React + Vite portfolio built as a "systems dashboard" — animated terminal boot sequence,
@@ -43,3 +44,7 @@ npm run preview   # preview the production build
 - Update `CONTACT` in `src/data.js` if your email/phone change.
 - Swap in your actual LeetCode profile link in `Achievements.jsx`.
 - Deploy easily to Vercel or Netlify — just point either at this repo, framework preset "Vite".
+=======
+# portfolio
+A personal developer portfolio website built with React.js showcasing my projects, professional experience, certifications, and achievements in a responsive layout.
+>>>>>>> 2ff272a6ae329bb69daac3c6b01e3d1730f7b5fe
