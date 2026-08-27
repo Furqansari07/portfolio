@@ -39,9 +39,9 @@ export default function Contact() {
             </button>
           </div>
           <div className="contact-links mono">
-            <a href="#" target="_blank" rel="noopener noreferrer"><Github size={14} /> {CONTACT.github}</a>
-            <a href="#" target="_blank" rel="noopener noreferrer"><Linkedin size={14} /> {CONTACT.linkedin}</a>
-            <a href="#" target="_blank" rel="noopener noreferrer"><Code2 size={14} /> leetcode profile</a>
+            <a href="https://www.github.com/Furqansari07" target="_blank" rel="noopener noreferrer"><Github size={14} /> {CONTACT.github}</a>
+            <a href="https://www.linkedin.com/in/furqansari07" target="_blank" rel="noopener noreferrer"><Linkedin size={14} /> {CONTACT.linkedin}</a>
+            <a href="https://leetcode.com/u/Furqansari07/" target="_blank" rel="noopener noreferrer"><Code2 size={14} /> leetcode profile</a>
             <span><MapPin size={14} style={{ display: "inline", marginRight: 4 }} />{CONTACT.location}</span>
           </div>
         </div>

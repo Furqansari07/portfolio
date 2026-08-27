@@ -8,7 +8,7 @@ export const BOOT_LINES = [
 export const STATS = [
   { label: "backend response time cut", value: 40, suffix: "%" },
   { label: "api reliability delivered", value: 99.5, suffix: "%" },
-  { label: "dsa problems solved", value: 250, suffix: "+" },
+  { label: "dsa problems solved", value: 270, suffix: "+" },
   { label: "cgpa · top 5% batch", value: 9.14, suffix: "/10" },
 ];
 
