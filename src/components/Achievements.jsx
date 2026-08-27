@@ -13,7 +13,7 @@ export default function Achievements() {
           <div className="achieve-card">
             <div className="achieve-card-title mono">leetcode</div>
             <div className="leetcode-row">
-              <div className="leetcode-badge">250+</div>
+              <div className="leetcode-badge">270+</div>
               <div className="leetcode-meta">
                 DSA problems solved · top 15% globally<br />
                 <a href="#" target="_blank" rel="noopener noreferrer">view leetcode profile →</a>

@@ -35,7 +35,7 @@ export const EXPERIENCE = [
       "Raised Lighthouse score 72 → 88 via lazy loading, code-splitting",
       "Engineered 20+ reusable components, cut duplicate code 30%",
     ],
-    stack: ["React.js", "Bootstrap", "JavaScript","HTML", "CSS"],
+    stack: ["React.js", "Bootstrap", "JavaScript","HTML", "CSS", "Tailwind CSS"],
   },
 ];
 
@@ -119,14 +119,14 @@ export const EDUCATION = [
   },
   {
     degree: "Class XII",
-    school: "Maharashtra State Board",
+    school: "Bhavani Shankar Road Junior College of Science, Maharashtra State Board",
     date: "2020",
     highlight: "78.77%",
     highlightLabel: "Top 10% of Batch",
   },
   {
     degree: "Class X",
-    school: "Maharashtra State Board",
+    school: "Worli Seaface English Muncipal High School, Maharashtra State Board",
     date: "2018",
     highlight: "84.40%",
     highlightLabel: "Top 5% of Batch",
