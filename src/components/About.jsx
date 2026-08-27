@@ -18,7 +18,7 @@ export default function About() {
             <br /><br />
             Outside of internships, I build things I'm genuinely curious about — a JWT-secured
             recipe platform, an NLP tool that summarizes meetings — and I keep my fundamentals
-            sharp with <strong>250+ solved DSA problems</strong> on LeetCode, top 15% globally.
+            sharp with <strong>270+ solved DSA problems</strong> on LeetCode, top 15% globally.
             Right now I'm looking for a full-time Software Engineer or Full Stack Developer
             role where that same rigor gets applied at real scale.
           </p>
