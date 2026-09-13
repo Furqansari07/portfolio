@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { Download, Github, Linkedin, ArrowUpRight, X } from "lucide-react";
+import { Download, Github, Linkedin, ArrowUpRight, User } from "lucide-react";
 import StatCard from "./StatCard.jsx";
-import { BOOT_LINES, STATS, RESUME_URL } from "../data.js";
+import PreviewModal from "./PreviewModal.jsx";
+import { BOOT_LINES, STATS, RESUME_URL, PROFILE_PHOTO_URL } from "../data.js";
 import { useInView } from "../hooks.js";
 
 export default function Hero() {
@@ -22,20 +23,33 @@ export default function Hero() {
 
   return (
     <div className="hero" ref={heroRef}>
-      <div className="terminal">
-        <div className="terminal-bar">
-          <span className="dot" style={{ background: "#FF6B6B" }} />
-          <span className="dot" style={{ background: "#F5A623" }} />
-          <span className="dot" style={{ background: "#4CE0C7" }} />
+      <div className="hero-top">
+        <div className="terminal">
+          <div className="terminal-bar">
+            <span className="dot" style={{ background: "#FF6B6B" }} />
+            <span className="dot" style={{ background: "#F5A623" }} />
+            <span className="dot" style={{ background: "#4CE0C7" }} />
+          </div>
+          <div className="terminal-body mono">
+            {BOOT_LINES.slice(0, bootStep).map((line, i) => (
+              <div key={i} className={`boot-line ${line.startsWith("$") ? "cmd" : ""}`}>
+                {line}
+              </div>
+            ))}
+            {bootStep < BOOT_LINES.length && <span className="cursor" />}
+          </div>
         </div>
-        <div className="terminal-body mono">
-          {BOOT_LINES.slice(0, bootStep).map((line, i) => (
-            <div key={i} className={`boot-line ${line.startsWith("$") ? "cmd" : ""}`}>
-              {line}
+
+               <div className="avatar-frame" aria-hidden={!PROFILE_PHOTO_URL}>
+          {PROFILE_PHOTO_URL ? (
+            <img src={PROFILE_PHOTO_URL} alt="Furqan Ansari" className="avatar-img" />
+          ) : (
+            <div className="avatar-placeholder">
+              <User size={30} strokeWidth={1.4} />
+              <span className="mono avatar-placeholder-label">add photo</span>
             </div>
-          ))}
-          {bootStep < BOOT_LINES.length && <span className="cursor" />}
-        </div>
+          )}
+        </div> 
       </div>
 
       <h1 className="hero-title display">
@@ -70,17 +84,7 @@ export default function Hero() {
       </div>
 
       {resumeOpen && (
-        <div className="resume-modal-backdrop" onClick={() => setResumeOpen(false)}>
-          <div className="resume-modal" onClick={(e) => e.stopPropagation()}>
-            <div className="resume-modal-header">
-              <span className="mono">resume.pdf</span>
-              <button onClick={() => setResumeOpen(false)} className="resume-modal-close" aria-label="Close">
-                <X size={18} />
-              </button>
-            </div>
-            <iframe src={RESUME_URL} title="Furqan Ansari Resume" className="resume-modal-frame" />
-          </div>
-        </div>
+        <PreviewModal title="resume.pdf" url={RESUME_URL} onClose={() => setResumeOpen(false)} />
       )}
     </div>
   );

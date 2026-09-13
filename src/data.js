@@ -8,9 +8,12 @@ export const BOOT_LINES = [
 export const STATS = [
   { label: "backend response time cut", value: 40, suffix: "%" },
   { label: "api reliability delivered", value: 99.5, suffix: "%" },
-  { label: "dsa problems solved", value: 270, suffix: "+" },
+  { label: "dsa problems solved", value: 300, suffix: "+" },
   { label: "cgpa · top 5% batch", value: 9.14, suffix: "/10" },
 ];
+
+// TODO: REPLACE WITH YOUR ACTUAL LEETCODE PROFILE URL
+export const LEETCODE_URL = "https://leetcode.com/u/Furqansari07/";
 
 export const EXPERIENCE = [
   {
@@ -41,6 +44,14 @@ export const EXPERIENCE = [
 
 export const PROJECTS = [
   {
+    name: "ResQPlate",
+    status: "live",
+    desc: "Full-stack food-rescue platform connecting surplus-food donors, verified volunteers, and shelters/NGOs in real time. Role-based auth, end-to-end donation lifecycle tracking, and an admin panel for verification and oversight.",
+    metrics: ["3 user roles", "OTP + OAuth", "Admin panel"],
+    stack: ["Next.js", "TypeScript", "MongoDB", "NextAuth.js", "Cloudinary"],
+    href: "https://resqplate-cyan.vercel.app/",
+  },
+  {
     name: "Recipe Finder",
     status: "live",
     desc: "Full-stack recipe platform with JWT auth, bcrypt hashing, and 8 REST endpoints handling 500+ daily requests at sub-100ms response.",
@@ -64,7 +75,6 @@ export const PROJECTS = [
     stack: ["JavaScript", "HTML5", "CSS3","React.js"],
     href: "https://quiz-site-gilt.vercel.app/",
   },
-  
 ];
 
 export const SKILLS = {
@@ -73,7 +83,7 @@ export const SKILLS = {
   Backend: ["ASP.NET Core", "Node.js", "PHP", "Flask", "REST APIs", "Entity Framework Core", "LINQ"],
   Database: ["MySQL", "MongoDB", "SQL Server"],
   "Testing & QA": ["Functional Testing", "Regression Testing", "Manual Testing", "API Testing", "Selenium", "JUnit", "TestNG", "PyTest", "Postman"],
-  Tools: ["Git/GitHub", "Jira", "Figma", "Power BI", "Tableau"],
+  Tools: ["Git/GitHub", "Jira", "Figma", "Power BI", "Tableau", "Selenium", "PyTest", "TestNG", "Postman"],
 };
 
 export const SOFT_SKILLS = [
@@ -82,17 +92,16 @@ export const SOFT_SKILLS = [
 ];
 
 export const CERTIFICATIONS = [
+  { name: "TCS iON Career Edge - Generative AI Essentials", issuer: "Tata Consultancy Service", url: "https://drive.google.com/file/d/1vs_RkP4MNuyzcHp4UXSwqDO9wxWZGOI0/view?usp=sharing" },
   { name: "Machine Learning for NLP", issuer: "AWS Academy", url: "https://drive.google.com/file/d/11Datt4fjUPVsfW13ktrmVljxAs7AqIt5/view?usp=sharing" },
   { name: "Cloud Foundations", issuer: "AWS Academy", url:"https://drive.google.com/file/d/11ChnvLNzRMfyAtyACmuX0deHXr1sDb2u/view?usp=sharing" },
   { name: "Python Programming", issuer: "Kaggle", url:"https://drive.google.com/file/d/11AewYxGQr5i2X75DBhZ7CfUUrSbo_Ar4/view?usp=sharing"},
   { name: "Introduction to Artificial Intelligence", issuer: "LinkedIn Learning", url:"https://drive.google.com/file/d/118pf_xloyQKV3erUovmszDpcHh1FRXaO/view?usp=sharing" },
   { name: "Introduction to Automation Testing", issuer: "Infosys Springboard", url:"https://drive.google.com/file/d/1d4xPuHEBC2DOpgz3WIWEInVL5CHph0k0/view?usp=sharing" },
   { name: "Testing Basics & Test Management", issuer: "Infosys Springboard", url:"https://drive.google.com/file/d/1XU_mCbtUERjckFMaAlshyhlOlCRwL3Pz/view?usp=sharing" },
-  
 ];
 
 export const OTHER_BUILDS = [
-  
   { name: "Currency Converter", desc: "Live exchange-rate converter", stack: ["JavaScript"], href: "https://currency-converter-mocha-three.vercel.app/" },
   { name: "Tic Tac Toe", desc: "Classic 3x3 grid game", stack: ["JS", "DOM"], href: "https://tic-tac-toe-game-six-khaki.vercel.app/" },
   { name: "Rock Paper Scissors", desc: "User vs computer, score tracker", stack: ["JavaScript"], href: "https://rock-paper-scissor-game-bice-omega.vercel.app/" },
@@ -100,15 +109,29 @@ export const OTHER_BUILDS = [
   { name: "Password Generator", desc: "Generates strong, secure passwords", stack: ["React.js"], href: "https://password-generator-lemon-chi.vercel.app/" },
 ];
 
+
+export function toPreviewUrl(url) {
+  if (!url) return url;
+  return url.replace(/\/view(\?.*)?$/, "/preview");
+}
+
 export const CONTACT = {
   email: "Furqansari2412@gmail.com",
   phone: "+917900141523",
   phoneDisplay: "+91 7900141523",
-  location: "Mumbai, India",
+  location: "Mumbai, Maharashtra, India",
   github: "github.com/Furqansari07",
   linkedin: "linkedin.com/in/furqansari07",
 };
-export const RESUME_URL = "https://drive.google.com/file/d/1XFKwqEsLwYbU4VvS7jPPYal0AfUx8cte/preview";
+
+
+export const RESUME_URL = "https://drive.google.com/file/d/18WMN3IWzPL8BPtKFuxT_qnwgPIR-Ny7C/preview";
+
+export const PROFILE_PHOTO_URL = "/Profile.jpg"; // e.g. "/profile.jpg"
+
+
+export const CONTACT_FORM_ENDPOINT = "https://formspree.io/f/xgaejapd";
+
 export const EDUCATION = [
   {
     degree: "B.E. Computer Engineering",

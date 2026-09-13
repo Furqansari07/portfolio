@@ -8,7 +8,7 @@ export default function Projects() {
   return (
     <section className="block" id="projects">
       <Reveal>
-        <SectionLabel index="04" title="deployed projects" />
+       <SectionLabel index="06" title="other builds" icon="🧩" /> 
         <div className="projects-grid">
           {PROJECTS.map((p) => (
             <div className="project-card" key={p.name}>

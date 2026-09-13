@@ -8,7 +8,7 @@ export default function Education() {
   return (
     <section className="block" id="education">
       <Reveal>
-        <SectionLabel index="02" title="education" />
+       <SectionLabel index="02" title="education" icon="🎓" />
         <div className="edu-list">
           {EDUCATION.map((e) => (
             <div className="edu-row" key={e.degree}>

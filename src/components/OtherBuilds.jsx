@@ -7,7 +7,7 @@ export default function OtherBuilds() {
   return (
     <section className="block" id="other-builds">
       <Reveal>
-        <SectionLabel index="06" title="other builds" />
+        <SectionLabel index="06" title="other builds" icon="🧩" />
         <p className="builds-note">
           Smaller practice projects from early on — kept here for completeness rather than
           featured above, since the four projects up top better represent my current level.

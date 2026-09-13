@@ -7,7 +7,7 @@ export default function About() {
   return (
     <section className="block" id="about">
       <Reveal>
-        <SectionLabel index="01" title="about" />
+      <SectionLabel index="01" title="about" icon="⚙" /> 
         <div className="about-grid">
           <p className="about-text">
             I'm a Computer Engineering graduate <strong>(9.14 CGPA, top 5% of my batch)</strong> who
@@ -18,7 +18,7 @@ export default function About() {
             <br /><br />
             Outside of internships, I build things I'm genuinely curious about — a JWT-secured
             recipe platform, an NLP tool that summarizes meetings — and I keep my fundamentals
-            sharp with <strong>270+ solved DSA problems</strong> on LeetCode, top 15% globally.
+            sharp with <strong>300+ solved DSA problems</strong> on LeetCode, top 15% globally.
             Right now I'm looking for a full-time Software Engineer or Full Stack Developer
             role where that same rigor gets applied at real scale.
           </p>

@@ -8,7 +8,7 @@ export default function Experience() {
   return (
     <section className="block" id="experience">
       <Reveal>
-        <SectionLabel index="03" title="experience log" />
+       <SectionLabel index="03" title="experience log" icon="💼" /> 
         {EXPERIENCE.map((exp) => (
           <div className="log-entry" key={exp.hash}>
             <div className="log-hash mono">{exp.hash}</div>

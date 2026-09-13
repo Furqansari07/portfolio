@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Nav from "./components/Nav.jsx";
 import Hero from "./components/Hero.jsx";
+import TechMarquee from "./components/TechMarquee.jsx";
 import About from "./components/About.jsx";
 import Education from "./components/Education.jsx";
 import Experience from "./components/Experience.jsx";
@@ -35,6 +36,7 @@ export default function App() {
       <Nav theme={theme} toggleTheme={toggleTheme} />
       <div className="nav-spacer" />
       <Hero />
+      <TechMarquee />
       <About />
       <Education />
       <Experience />
